@@ -1,5 +1,22 @@
+import java.util.ArrayList;
+import java.util.List;
 public class App {
-    public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+    public static void main(String[] args) {
+        List<Vehiculo> vehiculos = new ArrayList<>();
+        vehiculos.add(new Carro());
+        vehiculos.add(new Avion());
+        vehiculos.add(new Moto());
+        System.out.println(vehiculos);
+
+        for (Vehiculo vehiculo : vehiculos) {
+            vehiculo.moverse();
+        }
+
+        Nadador.patear();
+
+        Pato pato = new Pato();
+        pato.nadar();
+        pato.volar();
+        pato.clavado();
     }
 }
