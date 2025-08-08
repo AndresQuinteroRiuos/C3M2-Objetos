@@ -1,4 +1,4 @@
-public class Avion implements Vehiculo, Motorizado {
+public class Avion implements Vehiculo {
     @Override
     public void moverse() {
         System.out.println("El avión vuela en el cielo.");
@@ -9,14 +9,6 @@ public class Avion implements Vehiculo, Motorizado {
         return "Avión";
     }
     
-    @Override
-    public int obtenerVelocidad() {
-        // Ejemplo: retorna una velocidad fija para un avión
-        return 800;
-    }
-    
-    @Override
-    public void cambiarMarcha(int marcha) {
-        System.out.println("Avión cambia a la marcha " + marcha);
-    }
+   
+   
 }
