@@ -1,18 +1,11 @@
 public class Carro implements Vehiculo {
-
     @Override
     public void moverse() {
-        System.out.println("Se mueve sobre 4 ruedas");
+        System.out.println("El carro se mueve rápidamente.");
     }
-
+    
     @Override
-    public int obtenerVelocidad() {
-        return 120;
+    public String toString() {
+        return "Carro";
     }
-
-    @Override
-    public void cambiarMarcha(int cambio) {
-        System.out.println("Se cambio a :" + cambio + " marcha");
-    }
-
 }
